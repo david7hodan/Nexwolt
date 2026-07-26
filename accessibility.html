@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toegankelijkheid - NEXWOLT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-contact">
+            <span><i class="fa-solid fa-phone"></i> +32 465 27 40 95</span>
+            <span><i class="fa-regular fa-envelope"></i> info@nexwolt.be</span>
+        </div>
+        <div class="top-social">
+            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="belgium">Belgium</span></span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="photos/logo.png" alt="NEXWOLT Logo">
+            </a>
+        </div>
+        
+        <nav>
+            <a href="index.html" data-i18n="nav_home">HOME</a>
+            <a href="#" data-i18n="nav_about">OVER ONS</a>
+            <a href="#" data-i18n="nav_services">DIENSTEN <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#" data-i18n="nav_projects">PROJECTEN</a>
+            <a href="#" data-i18n="nav_why">WAAROM NEXWOLT</a>
+            <a href="#" data-i18n="nav_contact">CONTACT</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="custom-lang-selector" id="lang-dropdown">
+                <div class="lang-current" id="current-lang">
+                    <img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="lang-options" id="lang-options">
+                    <li data-lang="nl"><img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL</li>
+                    <li data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN</li>
+                    <li data-lang="fr"><img src="https://flagcdn.com/w20/fr.png" alt="FR"> FR</li>
+                    <li data-lang="uk"><img src="https://flagcdn.com/w20/ua.png" alt="UK"> UK</li>
+                </ul>
+            </div>
+            <a href="#" class="btn btn-blue" data-i18n="btn_quote">OFFERTE AANVRAGEN</a>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="text-container">
+            <h1 data-i18n="acc_title">Toegankelijkheidsverklaring</h1>
+            <p data-i18n="acc_p1">NEXWOLT streeft ernaar om digitale toegankelijkheid te garanderen voor mensen met een handicap. We verbeteren voortdurend de gebruikerservaring voor iedereen en passen de relevante toegankelijkheidsnormen toe.</p>
+            
+            <h2 data-i18n="acc_h2_1">Nalevingsstatus</h2>
+            <p data-i18n="acc_p2">Wij streven ernaar te voldoen aan de Web Content Accessibility Guidelines (WCAG) 2.1 niveau AA.</p>
+            
+            <h2 data-i18n="acc_h2_2">Feedback</h2>
+            <p data-i18n="acc_p3">Wij verwelkomen uw feedback over de toegankelijkheid van onze website. Laat het ons weten als u toegankelijkheidsbarrières tegenkomt:</p>
+            <ul>
+                <li><i class="fa-solid fa-phone text-blue"></i> +32 465 27 40 95</li>
+                <li><i class="fa-regular fa-envelope text-blue"></i> info@nexwolt.be</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEXWOLT.</p>
+            <a href="accessibility.html" class="btn btn-outline" data-i18n="nav_accessibility">Toegankelijkheidsverklaring</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diensten - NEXWOLT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Верхняя панель -->
+    <div class="top-bar">
+        <div class="top-contact">
+            <span><i class="fa-solid fa-phone"></i> +32 465 27 40 95</span>
+            <span><i class="fa-regular fa-envelope"></i> info@nexwolt.be</span>
+        </div>
+        <div class="top-social">
+            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="belgium">Belgium</span></span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Навигация -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="photos/logo.png" alt="NEXWOLT Logo">
+            </a>
+        </div>
+        
+        <nav>
+            <a href="index.html" data-i18n="nav_home">HOME</a>
+            <a href="about.html" data-i18n="nav_about">OVER ONS</a>
+            <!-- Класс active теперь здесь -->
+            <a href="services.html" class="active" data-i18n="nav_services">DIENSTEN <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#projects.html" data-i18n="nav_projects">PROJECTEN</a>
+            <a href="#" data-i18n="nav_why">WAAROM NEXWOLT</a>
+            <a href="#" data-i18n="nav_contact">CONTACT</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="custom-lang-selector" id="lang-dropdown">
+                <div class="lang-current" id="current-lang">
+                    <img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="lang-options" id="lang-options">
+                    <li data-lang="nl"><img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL</li>
+                    <li data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN</li>
+                    <li data-lang="fr"><img src="https://flagcdn.com/w20/fr.png" alt="FR"> FR</li>
+                    <li data-lang="uk"><img src="https://flagcdn.com/w20/ua.png" alt="UK"> UK</li>
+                </ul>
+            </div>
+            <a href="#" class="btn btn-blue" data-i18n="btn_quote">OFFERTE AANVRAGEN</a>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы услуг -->
+    <main class="page-content" style="flex-direction: column; align-items: center;">
+        
+        <!-- Заголовок страницы -->
+        <div style="text-align: center; margin-bottom: 50px; max-width: 800px;">
+            <h1 data-i18n="page_services_title" class="text-blue" style="font-size: 36px; margin-bottom: 20px;">ONZE DIENSTEN</h1>
+            <p data-i18n="page_services_intro" style="color: var(--text-gray); line-height: 1.6; font-size: 16px;">Ontdek ons uitgebreide aanbod aan professionele diensten voor uw woning of bedrijf.</p>
+        </div>
+
+        <!-- Сетка услуг (используем уже переведенные ключи из главной страницы) -->
+        <div class="services-grid-page">
+            <div class="service-card page-card">
+                <i class="fa-solid fa-bolt text-blue"></i>
+                <h3 data-i18n="srv1_title">ELEKTRICITEIT</h3>
+                <p data-i18n="srv1_desc">Professionele elektrische installaties voor woningen, bedrijven en industrie.</p>
+            </div>
+            <div class="service-card page-card">
+                <i class="fa-solid fa-house-signal text-blue"></i>
+                <h3 data-i18n="srv2_title">AUTOMATISATIE</h3>
+                <p data-i18n="srv2_desc">Slimme oplossingen voor woning- en gebouwautomatisatie. Comfort, veiligheid en efficiëntie.</p>
+            </div>
+            <div class="service-card page-card">
+                <i class="fa-solid fa-solar-panel text-blue"></i>
+                <h3 data-i18n="srv3_title">ZONNE-ENERGIE</h3>
+                <p data-i18n="srv3_desc">Duurzame en rendabele zonne-energiesystemen voor een groene toekomst.</p>
+            </div>
+            <div class="service-card page-card">
+                <i class="fa-solid fa-fire text-blue"></i>
+                <h3 data-i18n="srv4_title">BRANDSYSTEMEN</h3>
+                <p data-i18n="srv4_desc">Professionele branddetectie en brandbeveiligingssystemen voor maximale veiligheid.</p>
+            </div>
+            <div class="service-card page-card">
+                <i class="fa-solid fa-shield-halved text-blue"></i>
+                <h3 data-i18n="srv5_title">BEVEILIGINGSSYSTEMEN</h3>
+                <p data-i18n="srv5_desc">Alarmsystemen, camerabewaking en toegangscontrole voor de bescherming van wat belangrijk is.</p>
+            </div>
+            <div class="service-card page-card">
+                <i class="fa-solid fa-trowel-bricks text-blue"></i>
+                <h3 data-i18n="srv6_title">BOUW</h3>
+                <p data-i18n="srv6_desc">Algemene bouwwerken en renovaties met oog voor kwaliteit en duurzaamheid.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEXWOLT.</p>
+            <a href="accessibility.html" class="btn btn-outline" data-i18n="nav_accessibility">Toegankelijkheidsverklaring</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

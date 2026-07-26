@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten - NEXWOLT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Верхняя панель -->
+    <div class="top-bar">
+        <div class="top-contact">
+            <span><i class="fa-solid fa-phone"></i> +32 465 27 40 95</span>
+            <span><i class="fa-regular fa-envelope"></i> info@nexwolt.be</span>
+        </div>
+        <div class="top-social">
+            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="belgium">Belgium</span></span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Навигация -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="photos/logo.png" alt="NEXWOLT Logo">
+            </a>
+        </div>
+        
+        <nav>
+            <a href="index.html" data-i18n="nav_home">HOME</a>
+            <a href="about.html" data-i18n="nav_about">OVER ONS</a>
+            <a href="services.html" data-i18n="nav_services">DIENSTEN <i class="fa-solid fa-chevron-down"></i></a>
+            <!-- Вкладка PROJECTEN теперь активна -->
+            <a href="projects.html" class="active" data-i18n="nav_projects">PROJECTEN</a>
+            <a href="#" data-i18n="nav_why">WAAROM NEXWOLT</a>
+            <a href="#" data-i18n="nav_contact">CONTACT</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="custom-lang-selector" id="lang-dropdown">
+                <div class="lang-current" id="current-lang">
+                    <img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="lang-options" id="lang-options">
+                    <li data-lang="nl"><img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL</li>
+                    <li data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN</li>
+                    <li data-lang="fr"><img src="https://flagcdn.com/w20/fr.png" alt="FR"> FR</li>
+                    <li data-lang="uk"><img src="https://flagcdn.com/w20/ua.png" alt="UK"> UK</li>
+                </ul>
+            </div>
+            <a href="#" class="btn btn-blue" data-i18n="btn_quote">OFFERTE AANVRAGEN</a>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы проектов -->
+    <main class="page-content" style="flex-direction: column; align-items: center; padding-top: 40px;">
+        
+        <!-- Заголовок страницы -->
+        <div style="text-align: center; margin-bottom: 50px; max-width: 800px;">
+            <h1 data-i18n="page_projects_title" class="text-blue" style="font-size: 36px; margin-bottom: 20px;">ONZE PROJECTEN</h1>
+            <p data-i18n="page_projects_intro" style="color: var(--text-gray); line-height: 1.6; font-size: 16px;">Een greep uit onze recente realisaties.</p>
+        </div>
+
+        <!-- Сетка проектов (Каркас) -->
+        <div class="projects-grid">
+            
+            <!-- Проект 1 -->
+            <div class="project-card-ui">
+                <div class="project-img-wrapper">
+                    <img src="photos/project1.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_title_placeholder">Project Naam</h3>
+                    <p data-i18n="proj_desc_placeholder">Korte beschrijving van het project komt hier. Later aan te vullen met echte tekst.</p>
+                </div>
+            </div>
+
+            <!-- Проект 2 -->
+            <div class="project-card-ui">
+                <div class="project-img-wrapper">
+                    <img src="photos/project2.png" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_title_placeholder">Project Naam</h3>
+                    <p data-i18n="proj_desc_placeholder">Korte beschrijving van het project komt hier. Later aan te vullen met echte tekst.</p>
+                </div>
+            </div>
+
+            <!-- Проект 3 -->
+            <div class="project-card-ui">
+                <div class="project-img-wrapper">
+                    <img src="photos/project3.png" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3 data-i18n="proj_title_placeholder">Project Naam</h3>
+                    <p data-i18n="proj_desc_placeholder">Korte beschrijving van het project komt hier. Later aan te vullen met echte tekst.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEXWOLT.</p>
+            <a href="accessibility.html" class="btn btn-outline" data-i18n="nav_accessibility">Toegankelijkheidsverklaring</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

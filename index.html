@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXWOLT - Powering the Future</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-contact">
+            <span><i class="fa-solid fa-phone"></i> +32 465 27 40 95</span>
+            <span><i class="fa-regular fa-envelope"></i> info@nexwolt.be</span>
+        </div>
+        <div class="top-social">
+            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="belgium">Belgium</span></span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="photos/logo.png" alt="NEXWOLT Logo">
+            </a>
+        </div>
+        
+        <nav>
+            <a href="index.html" class="active" data-i18n="nav_home">HOME</a>
+            <a href="about.html" data-i18n="nav_about">OVER ONS</a>
+            <a href="services.html" data-i18n="nav_services">DIENSTEN <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="projects.html" data-i18n="nav_projects">PROJECTEN</a>
+            <a href="#" data-i18n="nav_why">WAAROM NEXWOLT</a>
+            <a href="#" data-i18n="nav_contact">CONTACT</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="custom-lang-selector" id="lang-dropdown">
+                <div class="lang-current" id="current-lang">
+                    <img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="lang-options" id="lang-options">
+                    <li data-lang="nl"><img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL</li>
+                    <li data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN</li>
+                    <li data-lang="fr"><img src="https://flagcdn.com/w20/fr.png" alt="FR"> FR</li>
+                    <li data-lang="uk"><img src="https://flagcdn.com/w20/ua.png" alt="UK"> UK</li>
+                </ul>
+            </div>
+            <a href="#" class="btn btn-blue" data-i18n="btn_quote">OFFERTE AANVRAGEN</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('photos/bg.jpg');"></div>
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">POWERING<br><span class="text-blue">THE FUTURE</span></h1>
+            <p data-i18n="hero_desc">NEXWOLT is uw betrouwbare partner voor elektriciteit, automatisatie, zonne-energie, brand- en beveiligingssystemen en bouwprojecten in heel België.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-blue"><i class="fa-solid fa-bolt"></i> <span data-i18n="btn_our_services">ONZE DIENSTEN</span></a>
+                <a href="#" class="btn btn-outline"><i class="fa-solid fa-phone"></i> +32 465 27 40 95</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-card">
+            <i class="fa-solid fa-bolt text-blue"></i>
+            <h3 data-i18n="srv1_title">ELEKTRICITEIT</h3>
+            <p data-i18n="srv1_desc">Professionele elektrische installaties voor woningen, bedrijven en industrie.</p>
+            <a href="#" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-house-signal text-blue"></i>
+            <h3 data-i18n="srv2_title">AUTOMATISATIE</h3>
+            <p data-i18n="srv2_desc">Slimme oplossingen voor woning- en gebouwautomatisatie. Comfort, veiligheid en efficiëntie.</p>
+            <a href="#" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-solar-panel text-blue"></i>
+            <h3 data-i18n="srv3_title">ZONNE-ENERGIE</h3>
+            <p data-i18n="srv3_desc">Duurzame en rendabele zonne-energiesystemen voor een groene toekomst.</p>
+            <a href="#" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-fire text-blue"></i>
+            <h3 data-i18n="srv4_title">BRANDSYSTEMEN</h3>
+            <p data-i18n="srv4_desc">Professionele branddetectie en brandbeveiligingssystemen voor maximale veiligheid.</p>
+            <a href="#" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-shield-halved text-blue"></i>
+            <h3 data-i18n="srv5_title">BEVEILIGINGSSYSTEMEN</h3>
+            <p data-i18n="srv5_desc">Alarmsystemen, camerabewaking en toegangscontrole voor de bescherming van wat belangrijk is.</p>
+            <a href="#" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-trowel-bricks text-blue"></i>
+            <h3 data-i18n="srv6_title">BOUW</h3>
+            <p data-i18n="srv6_desc">Algemene bouwwerken en renovaties met oog voor kwaliteit en duurzaamheid.</p>
+            <a href="#" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+            <i class="fa-solid fa-check-to-slot text-blue"></i>
+            <div>
+                <h4 data-i18n="feat1_title">KWALITEIT & BETROUWBAARHEID</h4>
+                <p data-i18n="feat1_desc">Hoogwaardige materialen en professionele afwerking.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-users text-blue"></i>
+            <div>
+                <h4 data-i18n="feat2_title">ERVAREN TEAM</h4>
+                <p data-i18n="feat2_desc">Gekwalificeerde specialisten met jarenlange ervaring.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fa-regular fa-clock text-blue"></i>
+            <div>
+                <h4 data-i18n="feat3_title">SNELLE SERVICE</h4>
+                <p data-i18n="feat3_desc">Efficiënte planning en stipte uitvoering van elk project.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-leaf text-blue"></i>
+            <div>
+                <h4 data-i18n="feat4_title">DUURZAAMHEID</h4>
+                <p data-i18n="feat4_desc">Oplossingen met respect voor mens en milieu.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEXWOLT.</p>
+            <a href="accessibility.html" class="btn btn-outline" data-i18n="nav_accessibility">Toegankelijkheidsverklaring</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
