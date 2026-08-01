@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waarom Nexwolt - NEXWOLT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Верхняя панель -->
+    <div class="top-bar">
+        <div class="top-contact">
+            <span><i class="fa-solid fa-phone"></i> BE +32 465 274 095</span>
+            <span><i class="fa-solid fa-phone"></i> UA +38 095 884 7677</span>
+            <span><i class="fa-regular fa-envelope"></i> info@nexwolt.be</span>
+            <span><i class="fa-regular fa-envelope"></i> symeon@nexwolt.be</span>
+        </div>
+        <div class="top-social">
+            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="belgium">Belgium</span></span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nexwolt?igsh=dDh1Y2d3bmw3bG01&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Навигация -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="photos/logo.png" alt="NEXWOLT Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" data-i18n="nav_home">HOME</a>
+            <a href="about.html" data-i18n="nav_about">OVER ONS</a>
+            <a href="services.html" data-i18n="nav_services">DIENSTEN <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="projects.html" data-i18n="nav_projects">PROJECTEN</a>
+            <!-- Вкладка активна здесь -->
+            <a href="why.html" class="active" data-i18n="nav_why">WAAROM NEXWOLT</a>
+            <a href="#" data-i18n="nav_contact">CONTACT</a>
+        </nav>
+        <div class="header-actions">
+            <div class="custom-lang-selector" id="lang-dropdown">
+                <div class="lang-current" id="current-lang">
+                    <img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="lang-options" id="lang-options">
+                    <li data-lang="nl"><img src="https://flagcdn.com/w20/nl.png" alt="NL"> NL</li>
+                    <li data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN</li>
+                    <li data-lang="fr"><img src="https://flagcdn.com/w20/fr.png" alt="FR"> FR</li>
+                    <li data-lang="uk"><img src="https://flagcdn.com/w20/ua.png" alt="UK"> UK</li>
+                </ul>
+            </div>
+            <a href="#" class="btn btn-blue" data-i18n="btn_quote">OFFERTE AANVRAGEN</a>
+        </div>
+    </header>
+
+    <main class="page-content" style="flex-direction: column; align-items: center; padding-top: 40px;">
+        
+        <!-- Вступление -->
+        <div style="text-align: center; margin-bottom: 50px; max-width: 900px;">
+            <h1 data-i18n="why_title" class="text-blue" style="font-size: 36px; margin-bottom: 20px;"></h1>
+            <p data-i18n="why_intro" style="color: var(--text-gray); line-height: 1.8; font-size: 16px;"></p>
+            <h2 data-i18n="why_subtitle" style="font-size: 24px; margin-top: 40px; color: var(--text-white);"></h2>
+        </div>
+
+        <!-- Сетка из 8 пунктов -->
+        <div class="why-grid">
+            <div class="why-card">
+                <i class="fa-solid fa-lightbulb text-blue"></i>
+                <h3 data-i18n="why_1_title"></h3>
+                <p data-i18n="why_1_desc"></p>
+            </div>
+            <div class="why-card">
+                <i class="fa-solid fa-puzzle-piece text-blue"></i>
+                <h3 data-i18n="why_2_title"></h3>
+                <p data-i18n="why_2_desc"></p>
+            </div>
+            <div class="why-card">
+                <i class="fa-solid fa-medal text-blue"></i>
+                <h3 data-i18n="why_3_title"></h3>
+                <p data-i18n="why_3_desc"></p>
+            </div>
+            <div class="why-card">
+                <i class="fa-solid fa-users-gear text-blue"></i>
+                <h3 data-i18n="why_4_title"></h3>
+                <p data-i18n="why_4_desc"></p>
+            </div>
+            <div class="why-card">
+                <i class="fa-solid fa-leaf text-blue"></i>
+                <h3 data-i18n="why_5_title"></h3>
+                <p data-i18n="why_5_desc"></p>
+            </div>
+            <div class="why-card">
+                <i class="fa-solid fa-handshake text-blue"></i>
+                <h3 data-i18n="why_6_title"></h3>
+                <p data-i18n="why_6_desc"></p>
+            </div>
+            <div class="why-card">
+                <i class="fa-solid fa-stopwatch text-blue"></i>
+                <h3 data-i18n="why_7_title"></h3>
+                <p data-i18n="why_7_desc"></p>
+            </div>
+            <div class="why-card">
+                <i class="fa-solid fa-infinity text-blue"></i>
+                <h3 data-i18n="why_8_title"></h3>
+                <p data-i18n="why_8_desc"></p>
+            </div>
+        </div>
+
+        <!-- Заключение -->
+        <div style="text-align: center; margin-top: 50px; max-width: 800px; background-color: var(--card-bg); padding: 40px; border-radius: 8px; border: 1px solid var(--card-border);">
+            <h2 data-i18n="why_conclusion_title" class="text-blue" style="font-size: 24px; margin-bottom: 15px;"></h2>
+            <p data-i18n="why_conclusion_desc" style="color: var(--text-gray); line-height: 1.6; font-size: 15px;"></p>
+        </div>
+
+    </main>
+
+    <!-- Футер и Куки -->
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEXWOLT.</p>
+            <div class="footer-links" style="display:flex; gap:15px; flex-wrap:wrap;">
+                <a href="accessibility.html" data-i18n="nav_accessibility">Toegankelijkheidsverklaring</a>
+                <a href="legal.html" data-i18n="nav_legal">Juridische documenten</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p class="cookie-text" data-i18n="cookie_banner_text">We use essential cookies to operate this website...</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn btn-blue" data-i18n="btn_accept_cookies">Accept All</button>
+            <button id="reject-cookies" class="btn btn-outline" data-i18n="btn_reject_cookies">Reject</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

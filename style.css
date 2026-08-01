@@ -262,4 +262,51 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
 @media (max-width: 768px) {
     .cookie-banner { right: 20px; bottom: 10px; left: 10px; }
     .footer-links { justify-content: center; }
+}/* --- СЕТКА ДЛЯ СТРАНИЦЫ "ПОЧЕМУ МЫ" (WHY.HTML) --- */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.why-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.why-card i {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.why-card h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: var(--text-white);
+}
+
+.why-card p {
+    font-size: 13px;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+/* Адаптивность для телефонов и планшетов */
+@media (max-width: 1000px) {
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .why-grid { grid-template-columns: 1fr; }
 }
