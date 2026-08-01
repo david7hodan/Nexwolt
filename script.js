@@ -1,7 +1,5 @@
-// Объект со всеми переводами сайта
 const translations = {
     "nl": {
-        // Шапка и Главная страница
         "belgium": "Belgium",
         "nav_home": "HOME",
         "nav_about": "OVER ONS",
@@ -34,27 +32,35 @@ const translations = {
         "feat3_desc": "Efficiënte planning en stipte uitvoering van elk project.",
         "feat4_title": "DUURZAAMHEID",
         "feat4_desc": "Oplossingen met respect voor mens en milieu.",
+        "page_services_title": "ONZE DIENSTEN",
+        "page_services_intro": "Ontdek ons uitgebreide aanbod aan professionele diensten voor uw woning of bedrijf.",
+        "page_projects_title": "ONZE PROJECTEN",
+        "page_projects_intro": "Een greep uit onze recente realisaties.",
+        "proj_title_placeholder": "Project Naam",
+        "proj_desc_placeholder": "Korte beschrijving van het project komt hier.",
         "nav_accessibility": "Toegankelijkheidsverklaring",
-        
-        // Страница Accessibility
         "acc_title": "Toegankelijkheidsverklaring",
         "acc_p1": "NEXWOLT streeft ernaar om digitale toegankelijkheid te garanderen voor mensen met een handicap. We verbeteren voortdurend de gebruikerservaring voor iedereen en passen de relevante toegankelijkheidsnormen toe.",
         "acc_h2_1": "Nalevingsstatus",
         "acc_p2": "Wij streven ernaar te voldoen aan de Web Content Accessibility Guidelines (WCAG) 2.1 niveau AA.",
         "acc_h2_2": "Feedback",
         "acc_p3": "Wij verwelkomen uw feedback over de toegankelijkheid van onze website. Laat het ons weten als u toegankelijkheidsbarrières tegenkomt:",
-
-        // Страница Услуг (Services)
-        "page_services_title": "ONZE DIENSTEN",
-        "page_services_intro": "Ontdek ons uitgebreide aanbod aan professionele diensten voor uw woning of bedrijf.", 
-                "page_projects_title": "ONZE PROJECTEN",
-        "page_projects_intro": "Een greep uit onze recente realisaties.",
-        "proj_title_placeholder": "Project Naam",
-        "proj_desc_placeholder": "Korte beschrijving van het project komt hier. Later aan te vullen met echte tekst."
-
+        
+        // Новые юридические документы и Куки
+        "nav_legal": "Juridische documenten",
+        "cookie_banner_text": "Wij gebruiken essentiële cookies om deze website te laten werken en optionele cookies om het verkeer te analyseren en uw ervaring te verbeteren. U kunt alles accepteren of niet-essentiële weigeren.",
+        "btn_accept_cookies": "Alles Accepteren",
+        "btn_reject_cookies": "Weigeren",
+        "legal_notice_title": "Juridische Kennisgeving (Legal Notice)",
+        "legal_notice_text": "Bedrijf: NEXWOLT<br>Locatie: Sint-Pieters-Leeuw, België<br>Ondernemingsnummer: 1040664984<br>E-mail: info@nexwolt.be<br>Website: nexwolt.be<br>Activiteiten: Bouw, elektrische installaties, zonnepanelen, laadpalen, beveiligingssystemen.",
+        "privacy_title": "Privacybeleid (Privacy Policy)",
+        "privacy_text": "Dit privacybeleid legt uit hoe NEXWOLT persoonsgegevens verzamelt, gebruikt, opslaat en beschermt onder de AVG (GDPR). We verzamelen gegevens via contactformulieren, offerteaanvragen, e-mails en websitegebruik. Wettelijke grondslagen zijn onder meer toestemming, uitvoering van een overeenkomst, wettelijke verplichtingen en gerechtvaardigde belangen. Betrokkenen kunnen hun rechten uitoefenen (inzage, rectificatie, wissing, beperking, overdraagbaarheid, bezwaar) door een e-mail te sturen naar info@nexwolt.be. Persoonsgegevens worden slechts bewaard zolang als nodig is. Er worden passende technische en organisatorische maatregelen toegepast om gegevens te beschermen. Externe leveranciers kunnen hosting, analyse, kaarten en betalingsproviders omvatten.",
+        "cookie_policy_title": "Cookiebeleid (Cookie Policy)",
+        "cookie_policy_text": "Essentiële cookies zijn altijd ingeschakeld. Analyse-, voorkeurs- en marketingcookies worden alleen gebruikt met toestemming. Gebruikers kunnen hun toestemming op elk moment intrekken via de cookievoorkeuren.",
+        "terms_title": "Algemene Voorwaarden (Terms & Conditions)",
+        "terms_text": "De website biedt algemene informatie over de diensten van NEXWOLT en kan zonder voorafgaande kennisgeving worden gewijzigd. Alle intellectuele eigendommen behoren toe aan NEXWOLT, tenzij anders vermeld. Gebruikers stemmen ermee in de website niet te misbruiken. Het Belgisch recht is van toepassing op deze voorwaarden. Aansprakelijkheid is beperkt tot de maximale wettelijk toegestane omvang."
     },
     "en": {
-        // Шапка и Главная страница
         "belgium": "Belgium",
         "nav_home": "HOME",
         "nav_about": "ABOUT US",
@@ -87,9 +93,13 @@ const translations = {
         "feat3_desc": "Efficient planning and punctual execution of every project.",
         "feat4_title": "SUSTAINABILITY",
         "feat4_desc": "Solutions with respect for people and the environment.",
+        "page_services_title": "OUR SERVICES",
+        "page_services_intro": "Discover our comprehensive range of professional services for your home or business.",
+        "page_projects_title": "OUR PROJECTS",
+        "page_projects_intro": "A selection of our recent realizations.",
+        "proj_title_placeholder": "Project Name",
+        "proj_desc_placeholder": "A brief description of the project goes here.",
         "nav_accessibility": "Accessibility Statement",
-
-        // Страница Accessibility
         "acc_title": "Accessibility Statement",
         "acc_p1": "NEXWOLT is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.",
         "acc_h2_1": "Conformance status",
@@ -97,17 +107,20 @@ const translations = {
         "acc_h2_2": "Feedback",
         "acc_p3": "We welcome your feedback on the accessibility of our website. Please let us know if you encounter accessibility barriers:",
 
-        // Страница Услуг (Services)
-        "page_services_title": "OUR SERVICES",
-        "page_services_intro": "Discover our comprehensive range of professional services for your home or business.",
-                "page_projects_title": "OUR PROJECTS",
-        "page_projects_intro": "A selection of our recent realizations.",
-        "proj_title_placeholder": "Project Name",
-        "proj_desc_placeholder": "A brief description of the project goes here. To be updated with real text later."
-
+        "nav_legal": "Legal Documents",
+        "cookie_banner_text": "We use essential cookies to operate this website and optional cookies to analyse traffic and improve your experience. You can Accept All or Reject Non-Essential cookies.",
+        "btn_accept_cookies": "Accept All",
+        "btn_reject_cookies": "Reject",
+        "legal_notice_title": "Legal Notice",
+        "legal_notice_text": "Company: NEXWOLT<br>Location: Sint-Pieters-Leeuw, Belgium<br>Enterprise Number: 1040664984<br>Email: info@nexwolt.be<br>Website: nexwolt.be<br>Business: Construction, electrical installations, solar panels, EV charging stations, security systems.",
+        "privacy_title": "Privacy Policy",
+        "privacy_text": "This Privacy Policy explains how NEXWOLT collects, uses, stores and protects personal data under the GDPR. We collect data submitted through contact forms, quotation requests, emails and website usage. Legal bases include consent, contract performance, legal obligations and legitimate interests. Data subjects may exercise rights of access, rectification, erasure, restriction, portability and objection by emailing info@nexwolt.be. Personal data is retained only as long as necessary. Appropriate technical and organisational measures are applied to protect data. Third-party providers may include hosting, analytics, maps and payment providers where applicable.",
+        "cookie_policy_title": "Cookie Policy",
+        "cookie_policy_text": "Essential cookies are always enabled. Analytics, preference and marketing cookies are used only with consent. Users can withdraw consent at any time through cookie preferences.",
+        "terms_title": "Terms & Conditions",
+        "terms_text": "The website provides information about NEXWOLT services. Content is for general information and may change without notice. All intellectual property belongs to NEXWOLT unless otherwise stated. Users agree not to misuse the website. Belgian law governs these terms. Liability is limited to the maximum extent permitted by law."
     },
     "fr": {
-        // Шапка и Главная страница
         "belgium": "Belgique",
         "nav_home": "ACCUEIL",
         "nav_about": "À PROPOS",
@@ -140,9 +153,13 @@ const translations = {
         "feat3_desc": "Planification efficace et exécution ponctuelle de chaque projet.",
         "feat4_title": "DURABILITÉ",
         "feat4_desc": "Des solutions respectueuses de l'homme et de l'environnement.",
+        "page_services_title": "NOS SERVICES",
+        "page_services_intro": "Découvrez notre gamme complète de services professionnels pour votre maison ou votre entreprise.",
+        "page_projects_title": "NOS PROJETS",
+        "page_projects_intro": "Une sélection de nos réalisations récentes.",
+        "proj_title_placeholder": "Nom du Projet",
+        "proj_desc_placeholder": "Une brève description du projet sera insérée ici.",
         "nav_accessibility": "Déclaration d'accessibilité",
-
-        // Страница Accessibility
         "acc_title": "Déclaration d'accessibilité",
         "acc_p1": "NEXWOLT s'engage à assurer l'accessibilité numérique aux personnes handicapées. Nous améliorons continuellement l'expérience utilisateur pour tous et appliquons les normes d'accessibilité pertinentes.",
         "acc_h2_1": "État de conformité",
@@ -150,17 +167,20 @@ const translations = {
         "acc_h2_2": "Commentaires",
         "acc_p3": "Nous accueillons vos commentaires sur l'accessibilité de notre site. Veuillez nous informer si vous rencontrez des obstacles:",
 
-        // Страница Услуг (Services)
-        "page_services_title": "NOS SERVICES",
-        "page_services_intro": "Découvrez notre gamme complète de services professionnels pour votre maison ou votre entreprise.",
-                "page_projects_title": "NOS PROJETS",
-        "page_projects_intro": "Une sélection de nos réalisations récentes.",
-        "proj_title_placeholder": "Nom du Projet",
-        "proj_desc_placeholder": "Une brève description du projet sera insérée ici. À mettre à jour avec du texte réel plus tard."
-
+        "nav_legal": "Documents légaux",
+        "cookie_banner_text": "Nous utilisons des cookies essentiels pour le fonctionnement de ce site et des cookies optionnels pour analyser le trafic. Vous pouvez tout accepter ou refuser les cookies non essentiels.",
+        "btn_accept_cookies": "Tout Accepter",
+        "btn_reject_cookies": "Refuser",
+        "legal_notice_title": "Mentions Légales (Legal Notice)",
+        "legal_notice_text": "Entreprise: NEXWOLT<br>Emplacement: Sint-Pieters-Leeuw, Belgique<br>Numéro d'entreprise: 1040664984<br>Email: info@nexwolt.be<br>Site web: nexwolt.be<br>Activités: Construction, installations électriques, panneaux solaires, bornes de recharge, systèmes de sécurité.",
+        "privacy_title": "Politique de Confidentialité (Privacy Policy)",
+        "privacy_text": "Cette politique explique comment NEXWOLT collecte, utilise, stocke et protège les données personnelles selon le RGPD. Nous collectons les données via les formulaires de contact, e-mails et l'utilisation du site. Les bases légales incluent le consentement, l'exécution de contrats et nos intérêts légitimes. Vous pouvez exercer vos droits d'accès, rectification, effacement, restriction et opposition en écrivant à info@nexwolt.be. Les données sont conservées uniquement le temps nécessaire. Des prestataires tiers peuvent inclure l'hébergement, les analyses et les services de paiement.",
+        "cookie_policy_title": "Politique des Cookies (Cookie Policy)",
+        "cookie_policy_text": "Les cookies essentiels sont toujours activés. Les cookies d'analyse et de marketing ne sont utilisés qu'avec votre consentement. Vous pouvez retirer votre consentement à tout moment.",
+        "terms_title": "Conditions Générales (Terms & Conditions)",
+        "terms_text": "Le site web fournit des informations générales sur les services de NEXWOLT et peut être modifié sans préavis. Toute la propriété intellectuelle appartient à NEXWOLT. La loi belge régit ces conditions. La responsabilité est limitée dans la mesure maximale permise par la loi."
     },
     "uk": {
-        // Шапка и Главная страница
         "belgium": "Бельгія",
         "nav_home": "ГОЛОВНА",
         "nav_about": "ПРО НАС",
@@ -193,9 +213,13 @@ const translations = {
         "feat3_desc": "Ефективне планування та пунктуальне виконання кожного проєкту.",
         "feat4_title": "ЕКОЛОГІЧНІСТЬ",
         "feat4_desc": "Рішення з повагою до людей та навколишнього середовища.",
+        "page_services_title": "НАШІ ПОСЛУГИ",
+        "page_services_intro": "Відкрийте для себе наш повний спектр професійних послуг для вашого будинку або бізнесу.",
+        "page_projects_title": "НАШІ ПРОЄКТИ",
+        "page_projects_intro": "Добірка наших останніх робіт.",
+        "proj_title_placeholder": "Назва Проєкту",
+        "proj_desc_placeholder": "Тут буде короткий опис проєкту.",
         "nav_accessibility": "Заява про доступність",
-
-        // Страница Accessibility
         "acc_title": "Заява про доступність",
         "acc_p1": "NEXWOLT прагне забезпечити цифрову доступність для людей з обмеженими можливостями. Ми постійно покращуємо користувацький досвід для всіх та застосовуємо відповідні стандарти доступності.",
         "acc_h2_1": "Статус відповідності",
@@ -203,18 +227,21 @@ const translations = {
         "acc_h2_2": "Зворотний зв'язок",
         "acc_p3": "Ми будемо раді вашим відгукам щодо доступності нашого веб-сайту. Будь ласка, повідомте нас, якщо ви зіткнетеся з перешкодами:",
 
-        // Страница Услуг (Services)
-        "page_services_title": "НАШІ ПОСЛУГИ",
-        "page_services_intro": "Відкрийте для себе наш повний спектр професійних послуг для вашого будинку або бізнесу.",
-                "page_projects_title": "НАШІ ПРОЄКТИ",
-        "page_projects_intro": "Добірка наших останніх робіт.",
-        "proj_title_placeholder": "Назва Проєкту",
-        "proj_desc_placeholder": "Тут буде короткий опис проєкту. Згодом буде замінено на реальний текст."
-
+        "nav_legal": "Юридичні документи",
+        "cookie_banner_text": "Ми використовуємо необхідні файли cookie для роботи цього веб-сайту та додаткові файли cookie для аналізу трафіку та покращення вашого досвіду. Ви можете прийняти всі або відхилити необов'язкові.",
+        "btn_accept_cookies": "Прийняти все",
+        "btn_reject_cookies": "Відхилити",
+        "legal_notice_title": "Правове застереження (Legal Notice)",
+        "legal_notice_text": "Компанія: NEXWOLT<br>Локація: Sint-Pieters-Leeuw, Бельгія<br>Номер підприємства: 1040664984<br>Email: info@nexwolt.be<br>Веб-сайт: nexwolt.be<br>Діяльність: Будівництво, електромонтаж, сонячні панелі, зарядні станції, системи безпеки.",
+        "privacy_title": "Політика конфіденційності (Privacy Policy)",
+        "privacy_text": "Ця Політика пояснює, як NEXWOLT збирає, використовує та захищає персональні дані відповідно до GDPR. Ми збираємо дані через контактні форми, запити, електронні листи та використання сайту. Правові підстави включають згоду, виконання контракту та законні інтереси. Ви можете скористатися правами на доступ, виправлення, видалення та обмеження, написавши на info@nexwolt.be. Дані зберігаються лише стільки, скільки потрібно. Застосовуються відповідні технічні заходи захисту.",
+        "cookie_policy_title": "Політика використання Cookie",
+        "cookie_policy_text": "Необхідні файли cookie завжди ввімкнені. Аналітичні та маркетингові cookie використовуються лише за згодою. Ви можете відкликати згоду в будь-який час.",
+        "terms_title": "Правила та умови (Terms & Conditions)",
+        "terms_text": "Веб-сайт надає інформацію про послуги NEXWOLT. Контент може змінюватися без попередження. Вся інтелектуальна власність належить NEXWOLT. Відповідальність обмежується максимальною мірою, дозволеною бельгійським законодавством."
     }
 };
 
-// Функция применения перевода
 function changeLanguage(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
@@ -223,18 +250,14 @@ function changeLanguage(lang) {
             el.innerHTML = translations[lang][key];
         }
     });
-
-    // Сохраняем выбранный язык, чтобы при переходе между страницами он не сбрасывался
     localStorage.setItem('selectedLang', lang);
 }
 
-// Логика кастомного выпадающего списка
 const langDropdown = document.getElementById('lang-dropdown');
 const currentLangBox = document.getElementById('current-lang');
 const langOptionsBox = document.getElementById('lang-options');
 const langItems = document.querySelectorAll('.lang-options li');
 
-// Открытие/закрытие списка
 if (currentLangBox) {
     currentLangBox.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -242,7 +265,6 @@ if (currentLangBox) {
     });
 }
 
-// Выбор языка
 if (langItems) {
     langItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -250,29 +272,46 @@ if (langItems) {
             const flagSrc = item.querySelector('img').src;
             const langText = selectedLang.toUpperCase();
             
-            // Обновляем текущий язык в шапке
             currentLangBox.innerHTML = `<img src="${flagSrc}" alt="${langText}"> ${langText} <i class="fa-solid fa-chevron-down"></i>`;
-            
-            // Переводим текст
             changeLanguage(selectedLang);
-            
-            // Закрываем меню
             langOptionsBox.classList.remove('show');
         });
     });
 }
 
-// Закрываем меню при клике вне его области
 document.addEventListener('click', () => {
     if (langOptionsBox && langOptionsBox.classList.contains('show')) {
         langOptionsBox.classList.remove('show');
     }
 });
 
-// Инициализация языка: проверяем, сохранял ли пользователь язык ранее
+// Логика всплывающего окна Cookie
+const cookieBanner = document.getElementById('cookie-banner');
+const acceptBtn = document.getElementById('accept-cookies');
+const rejectBtn = document.getElementById('reject-cookies');
+
+if (cookieBanner && !localStorage.getItem('cookiesAccepted')) {
+    // Показываем баннер с задержкой, если куки еще не приняты
+    setTimeout(() => { cookieBanner.style.display = 'flex'; }, 1000);
+}
+
+if (acceptBtn) {
+    acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookieBanner.style.display = 'none';
+    });
+}
+
+if (rejectBtn) {
+    rejectBtn.addEventListener('click', () => {
+        localStorage.setItem('cookiesAccepted', 'false');
+        cookieBanner.style.display = 'none';
+    });
+}
+
+// Инициализация языка
 const savedLang = localStorage.getItem('selectedLang') || 'nl';
 
-// Находим флаг и текст для сохраненного языка при загрузке страницы
 if (langItems) {
     const defaultItem = Array.from(langItems).find(item => item.getAttribute('data-lang') === savedLang);
     if (defaultItem) {
@@ -284,5 +323,4 @@ if (langItems) {
     }
 }
 
-// Применяем язык
 changeLanguage(savedLang);

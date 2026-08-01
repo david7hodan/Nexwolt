@@ -13,13 +13,16 @@
     <!-- Верхняя панель -->
     <div class="top-bar">
         <div class="top-contact">
-            <span><i class="fa-solid fa-phone"></i> +32 465 27 40 95</span>
+            <span><i class="fa-solid fa-phone"></i> BE +32 465 274 095</span>
+            <span><i class="fa-solid fa-phone"></i> UA +38 095 884 7677</span>
             <span><i class="fa-regular fa-envelope"></i> info@nexwolt.be</span>
+            <span><i class="fa-regular fa-envelope"></i> symeon@nexwolt.be</span>
         </div>
         <div class="top-social">
             <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="belgium">Belgium</span></span>
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <!-- Ссылка на Instagram добавлена сюда. target="_blank" откроет ее в новой вкладке -->
+            <a href="https://www.instagram.com/nexwolt?igsh=dDh1Y2d3bmw3bG01&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </div>
@@ -37,7 +40,7 @@
             <a href="about.html" data-i18n="nav_about">OVER ONS</a>
             <!-- Класс active теперь здесь -->
             <a href="services.html" class="active" data-i18n="nav_services">DIENSTEN <i class="fa-solid fa-chevron-down"></i></a>
-            <a href="#projects.html" data-i18n="nav_projects">PROJECTEN</a>
+            <a href="projects.html" data-i18n="nav_projects">PROJECTEN</a>
             <a href="#" data-i18n="nav_why">WAAROM NEXWOLT</a>
             <a href="#" data-i18n="nav_contact">CONTACT</a>
         </nav>
@@ -104,12 +107,25 @@
     </main>
 
     <!-- Футер -->
+<!-- Футер -->
     <footer class="site-footer">
         <div class="footer-bottom">
             <p>&copy; 2026 NEXWOLT.</p>
-            <a href="accessibility.html" class="btn btn-outline" data-i18n="nav_accessibility">Toegankelijkheidsverklaring</a>
+            <div class="footer-links" style="display:flex; gap:15px; flex-wrap:wrap;">
+                <a href="accessibility.html" data-i18n="nav_accessibility">Toegankelijkheidsverklaring</a>
+                <a href="legal.html" data-i18n="nav_legal">Juridische documenten</a>
+            </div>
         </div>
     </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p class="cookie-text" data-i18n="cookie_banner_text">We use essential cookies to operate this website...</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn btn-blue" data-i18n="btn_accept_cookies">Accept All</button>
+            <button id="reject-cookies" class="btn btn-outline" data-i18n="btn_reject_cookies">Reject</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

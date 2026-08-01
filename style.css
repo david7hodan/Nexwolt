@@ -222,3 +222,44 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
         grid-template-columns: 1fr;
     }
 }
+/* Адаптивность для верхней панели контактов (чтобы длинный текст не слипался) */
+@media (max-width: 1000px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        padding: 15px;
+    }
+    .top-contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .top-contact span {
+        margin-right: 0;
+    }
+}/* --- COOKIE BANNER --- */
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: 450px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    z-index: 1000;
+    display: none; /* Скрыто, пока JS не проверит localStorage */
+    flex-direction: column;
+    gap: 15px;
+}
+.cookie-text { font-size: 12px; color: var(--text-gray); line-height: 1.6; }
+.cookie-buttons { display: flex; gap: 10px; }
+.cookie-buttons .btn { font-size: 11px; padding: 10px; flex: 1; text-align: center; }
+
+@media (max-width: 768px) {
+    .cookie-banner { right: 20px; bottom: 10px; left: 10px; }
+    .footer-links { justify-content: center; }
+}
