@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <!-- Верхняя панель (Исправлены контакты и Инстаграм) -->
+    <!-- Верхняя панель -->
     <div class="top-bar">
         <div class="top-contact">
             <span><i class="fa-solid fa-phone"></i> BE +32 465 274 095</span>
@@ -59,53 +59,54 @@
         </div>
     </header>
 
-    <!-- Главный экран -->
+    <!-- Главный экран с фоном -->
     <section class="hero">
         <div class="hero-bg" style="background-image: url('photos/bg.jpg');"></div>
-        <div class="hero-content">
+        <!-- Добавлен класс анимации для текста -->
+        <div class="hero-content animate-on-scroll">
             <h1 data-i18n="hero_title">POWERING<br><span class="text-blue">THE FUTURE</span></h1>
             <p data-i18n="hero_desc">NEXWOLT is uw betrouwbare partner voor elektriciteit, automatisatie, zonne-energie, brand- en beveiligingssystemen en bouwprojecten in heel België.</p>
             <div class="hero-buttons">
-                <!-- Вернул синюю кнопку на место -->
                 <a href="services.html" class="btn btn-blue"><i class="fa-solid fa-bolt"></i> <span data-i18n="btn_our_services">ONZE DIENSTEN</span></a>
                 <a href="tel:+32465274095" class="btn btn-outline"><i class="fa-solid fa-phone"></i> BE +32 465 274 095</a>
             </div>
         </div>
     </section>
 
-    <!-- Сетка услуг (Исправлены ссылки на кнопки Meer Info) -->
+    <!-- Сетка услуг -->
     <section class="services">
-        <div class="service-card">
+        <!-- Каждой карточке добавлен класс animate-on-scroll -->
+        <div class="service-card animate-on-scroll">
             <i class="fa-solid fa-bolt text-blue"></i>
             <h3 data-i18n="srv1_title">ELEKTRICITEIT</h3>
             <p data-i18n="srv1_desc">Professionele elektrische installaties voor woningen, bedrijven en industrie.</p>
             <a href="services.html" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
         </div>
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
             <i class="fa-solid fa-house-signal text-blue"></i>
             <h3 data-i18n="srv2_title">AUTOMATISATIE</h3>
             <p data-i18n="srv2_desc">Slimme oplossingen voor woning- en gebouwautomatisatie. Comfort, veiligheid en efficiëntie.</p>
             <a href="services.html" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
         </div>
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
             <i class="fa-solid fa-solar-panel text-blue"></i>
             <h3 data-i18n="srv3_title">ZONNE-ENERGIE</h3>
             <p data-i18n="srv3_desc">Duurzame en rendabele zonne-energiesystemen voor een groene toekomst.</p>
             <a href="services.html" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
         </div>
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
             <i class="fa-solid fa-fire text-blue"></i>
             <h3 data-i18n="srv4_title">BRANDSYSTEMEN</h3>
             <p data-i18n="srv4_desc">Professionele branddetectie en brandbeveiligingssystemen voor maximale veiligheid.</p>
             <a href="services.html" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
         </div>
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
             <i class="fa-solid fa-shield-halved text-blue"></i>
             <h3 data-i18n="srv5_title">BEVEILIGINGSSYSTEMEN</h3>
             <p data-i18n="srv5_desc">Alarmsystemen, camerabewaking en toegangscontrole voor de bescherming van wat belangrijk is.</p>
             <a href="services.html" class="more-info" data-i18n="more_info">MEER INFO &rarr;</a>
         </div>
-        <div class="service-card">
+        <div class="service-card animate-on-scroll">
             <i class="fa-solid fa-trowel-bricks text-blue"></i>
             <h3 data-i18n="srv6_title">BOUW</h3>
             <p data-i18n="srv6_desc">Algemene bouwwerken en renovaties met oog voor kwaliteit en duurzaamheid.</p>
@@ -115,28 +116,28 @@
 
     <!-- Преимущества -->
     <section class="features">
-        <div class="feature-item">
+        <div class="feature-item animate-on-scroll">
             <i class="fa-solid fa-check-to-slot text-blue"></i>
             <div>
                 <h4 data-i18n="feat1_title">KWALITEIT & BETROUWBAARHEID</h4>
                 <p data-i18n="feat1_desc">Hoogwaardige materialen en professionele afwerking.</p>
             </div>
         </div>
-        <div class="feature-item">
+        <div class="feature-item animate-on-scroll">
             <i class="fa-solid fa-users text-blue"></i>
             <div>
                 <h4 data-i18n="feat2_title">ERVAREN TEAM</h4>
                 <p data-i18n="feat2_desc">Gekwalificeerde specialisten met jarenlange ervaring.</p>
             </div>
         </div>
-        <div class="feature-item">
+        <div class="feature-item animate-on-scroll">
             <i class="fa-regular fa-clock text-blue"></i>
             <div>
                 <h4 data-i18n="feat3_title">SNELLE SERVICE</h4>
                 <p data-i18n="feat3_desc">Efficiënte planning en stipte uitvoering van elk project.</p>
             </div>
         </div>
-        <div class="feature-item">
+        <div class="feature-item animate-on-scroll">
             <i class="fa-solid fa-leaf text-blue"></i>
             <div>
                 <h4 data-i18n="feat4_title">DUURZAAMHEID</h4>
@@ -145,7 +146,7 @@
         </div>
     </section>
 
- <!-- Футер -->
+    <!-- Футер -->
     <footer class="site-footer">
         <div class="footer-bottom">
             <p>&copy; 2026 NEXWOLT.</p>

@@ -56,7 +56,7 @@ header {
 }
 
 .logo { display: flex; align-items: center; }
-.logo img { height: 120px; width: auto; display: block; } /*размер логотипа*/
+.logo img { height: 120px; width: auto; display: block; }
 
 nav { display: flex; gap: 25px; }
 nav a { font-size: 13px; font-weight: 600; text-transform: uppercase; transition: color 0.3s; }
@@ -87,7 +87,19 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
 
 /* Главный экран (Hero) */
 .hero { position: relative; height: 70vh; display: flex; align-items: center; padding: 0 5%; }
-.hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: -1; }
+
+/* === ИСПРАВЛЕННЫЙ ФОН С ЭФФЕКТОМ ПАРАЛЛАКСА === */
+.hero-bg { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; /* Эффект параллакса */
+    z-index: -1; 
+}
 .hero-bg::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 100%); }
 .hero-content { max-width: 600px; }
 .hero h1 { font-size: 64px; line-height: 1.1; font-weight: 800; margin-bottom: 20px; }
@@ -127,6 +139,7 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
 /* Адаптивность */
 @media (max-width: 1200px) { .services { grid-template-columns: repeat(3, 1fr); } .features { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 768px) { header { flex-direction: column; gap: 15px; padding: 15px; } nav { flex-wrap: wrap; justify-content: center; } .services { grid-template-columns: repeat(2, 1fr); } .features { grid-template-columns: 1fr; } .hero h1 { font-size: 42px; } .text-container { padding: 30px; } .footer-bottom { flex-direction: column; gap: 20px; text-align: center; } }
+
 /* --- СЕТКА ДЛЯ СТРАНИЦЫ УСЛУГ (SERVICES.HTML) --- */
 .services-grid-page {
     display: grid;
@@ -138,10 +151,9 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
 
 .page-card {
     border: 1px solid var(--card-border);
-    border-radius: 8px; /* Скругляем углы карточек */
+    border-radius: 8px;
 }
 
-/* Адаптивность для телефонов и планшетов */
 @media (max-width: 900px) {
     .services-grid-page {
         grid-template-columns: repeat(2, 1fr);
@@ -153,6 +165,7 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
         grid-template-columns: 1fr;
     }
 }
+
 /* --- СЕТКА ДЛЯ СТРАНИЦЫ ПРОЕКТОВ (PROJECTS.HTML) --- */
 .projects-grid {
     display: grid;
@@ -167,7 +180,7 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
     background-color: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 8px;
-    overflow: hidden; /* Чтобы картинка не ломала скругление углов */
+    overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -180,18 +193,18 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
     width: 100%;
     height: 250px;
     overflow: hidden;
-    background-color: #1a1c23; /* Фон-заглушка, если фото не загрузится */
+    background-color: #1a1c23;
 }
 
 .project-img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Обрезает фото ровно по блоку без сплющивания */
+    object-fit: cover;
     transition: transform 0.5s;
 }
 
 .project-card-ui:hover .project-img-wrapper img {
-    transform: scale(1.05); /* Эффект зума картинки при наведении */
+    transform: scale(1.05);
 }
 
 .project-info {
@@ -210,7 +223,6 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
     line-height: 1.6;
 }
 
-/* Адаптивность для телефонов и планшетов */
 @media (max-width: 900px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -222,7 +234,8 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
         grid-template-columns: 1fr;
     }
 }
-/* Адаптивность для верхней панели контактов (чтобы длинный текст не слипался) */
+
+/* Адаптивность для верхней панели контактов */
 @media (max-width: 1000px) {
     .top-bar {
         flex-direction: column;
@@ -239,7 +252,9 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
     .top-contact span {
         margin-right: 0;
     }
-}/* --- COOKIE BANNER --- */
+}
+
+/* --- COOKIE BANNER --- */
 .cookie-banner {
     position: fixed;
     bottom: 20px;
@@ -251,7 +266,7 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
     z-index: 1000;
-    display: none; /* Скрыто, пока JS не проверит localStorage */
+    display: none;
     flex-direction: column;
     gap: 15px;
 }
@@ -262,7 +277,9 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
 @media (max-width: 768px) {
     .cookie-banner { right: 20px; bottom: 10px; left: 10px; }
     .footer-links { justify-content: center; }
-}/* --- СЕТКА ДЛЯ СТРАНИЦЫ "ПОЧЕМУ МЫ" (WHY.HTML) --- */
+}
+
+/* --- СЕТКА ДЛЯ СТРАНИЦЫ "ПОЧЕМУ МЫ" (WHY.HTML) --- */
 .why-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -302,11 +319,66 @@ nav a.active { border-bottom: 2px solid var(--blue-accent); padding-bottom: 5px;
     line-height: 1.6;
 }
 
-/* Адаптивность для телефонов и планшетов */
 @media (max-width: 1000px) {
     .why-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
     .why-grid { grid-template-columns: 1fr; }
+}
+
+/* Стили для контейнера логотипа и ссылки */
+header .logo .logo-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+}
+
+header .logo img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+header .logo .logo-text {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* === АНИМАЦИИ ПРИ СКРОЛЛЕ ДЛЯ ВСЕХ СТРАНИЦ === */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Эффект каскада (появление по очереди) для карточек услуг на главной */
+.service-card:nth-child(1) { transition-delay: 0.1s; }
+.service-card:nth-child(2) { transition-delay: 0.2s; }
+.service-card:nth-child(3) { transition-delay: 0.3s; }
+.service-card:nth-child(4) { transition-delay: 0.4s; }
+.service-card:nth-child(5) { transition-delay: 0.5s; }
+.service-card:nth-child(6) { transition-delay: 0.6s; }
+
+/* Каскад для преимуществ внизу */
+.feature-item:nth-child(1) { transition-delay: 0.1s; }
+.feature-item:nth-child(2) { transition-delay: 0.2s; }
+.feature-item:nth-child(3) { transition-delay: 0.3s; }
+.feature-item:nth-child(4) { transition-delay: 0.4s; }
+
+/* На мобильных телефонах ускоряем каскад */
+@media (max-width: 768px) {
+    .service-card:nth-child(odd), .feature-item:nth-child(odd) { transition-delay: 0.1s; }
+    .service-card:nth-child(even), .feature-item:nth-child(even) { transition-delay: 0.2s; }
 }

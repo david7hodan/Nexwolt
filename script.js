@@ -402,5 +402,23 @@ if (langItems) {
         }
     }
 }
+// --- ЛОГИКА АНИМАЦИЙ ПРИ СКРОЛЛЕ ---
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15 // Элемент появляется, когда видно 15% его высоты
+};
 
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // Анимация проиграется только 1 раз
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+});
 changeLanguage(savedLang);
