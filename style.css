@@ -381,4 +381,57 @@ header .logo .logo-text {
 @media (max-width: 768px) {
     .service-card:nth-child(odd), .feature-item:nth-child(odd) { transition-delay: 0.1s; }
     .service-card:nth-child(even), .feature-item:nth-child(even) { transition-delay: 0.2s; }
+}/* --- ЭФФЕКТЫ ДЛЯ ШАПКИ ПРИ СКРОЛЛЕ --- */
+header {
+    transition: background-color 0.4s, padding 0.4s, backdrop-filter 0.4s; /* Плавный переход */
+}
+
+/* Этот класс добавляется скриптом при прокрутке */
+header.scrolled {
+    background-color: rgba(5, 6, 8, 0.75) !important; /* Делаем прозрачнее */
+    backdrop-filter: blur(10px); /* Эффект размытия (матовое стекло) */
+    -webkit-backdrop-filter: blur(10px); /* Для Safari */
+    padding: 10px 40px !important; /* Делаем шапку тоньше */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5); /* Добавляем тень снизу */
+}
+
+header .logo img {
+    transition: height 0.4s ease; /* Плавное уменьшение логотипа */
+}
+
+/* --- ОЖИВАЮЩИЕ ИКОНКИ --- */
+/* Стрелочка в карточках услуг сдвигается при наведении */
+.service-card:hover .more-info {
+    letter-spacing: 1px;
+}
+.service-card .more-info {
+    transition: letter-spacing 0.3s ease;
+}
+
+/* Иконки в синих кнопках слегка увеличиваются при наведении */
+.btn:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+.btn i {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+/* ========================================== */
+/* --- ИСПРАВЛЕНИЕ БАГА С ФОНОМ НА iPAD --- */
+/* ========================================== */
+
+/* Это правило отключает параллакс специально на устройствах Apple (iOS/iPadOS) */
+@supports (-webkit-touch-callout: none) {
+    .hero-bg, 
+    .why-hero {
+        background-attachment: scroll !important;
+    }
+}
+
+/* Это правило отключает параллакс на всех планшетах и телефонах для плавной работы */
+@media (max-width: 1024px) {
+    .hero-bg, 
+    .why-hero {
+        background-attachment: scroll !important;
+    }
 }

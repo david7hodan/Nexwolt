@@ -390,6 +390,51 @@ if (rejectBtn) {
     });
 }
 
+// --- ЛОГИКА АНИМАЦИЙ ПРИ СКРОЛЛЕ ---
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+}); // <-- ЗДЕСЬ БЫЛА ОШИБКА, ТЕПЕРЬ СКОБКА ЗАКРЫТА ПРАВИЛЬНО
+
+// --- 3D TILT ЭФФЕКТ ДЛЯ КАРТОЧЕК ---
+if (typeof VanillaTilt !== 'undefined') {
+    VanillaTilt.init(document.querySelectorAll(".service-card, .why-card, .feature-item, .project-card-ui"), {
+        max: 10,           
+        speed: 400,        
+        glare: true,       
+        "max-glare": 0.2   
+    });
+}
+
+// --- УМНАЯ ШАПКА ПРИ СКРОЛЛЕ ---
+const header = document.querySelector('header');
+const logoImg = document.querySelector('.logo img');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        if(header) header.classList.add('scrolled');
+        if(logoImg) logoImg.style.height = '80px'; 
+    } else {
+        if(header) header.classList.remove('scrolled');
+        if(logoImg) logoImg.style.height = '120px'; 
+    }
+});
+
+// Инициализация языка при загрузке страницы
 const savedLang = localStorage.getItem('selectedLang') || 'nl';
 
 if (langItems) {
@@ -402,23 +447,4 @@ if (langItems) {
         }
     }
 }
-// --- ЛОГИКА АНИМАЦИЙ ПРИ СКРОЛЛЕ ---
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.15 // Элемент появляется, когда видно 15% его высоты
-};
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target); // Анимация проиграется только 1 раз
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.animate-on-scroll').forEach(el => {
-    observer.observe(el);
-});
 changeLanguage(savedLang);
